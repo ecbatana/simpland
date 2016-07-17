@@ -1,0 +1,2 @@
+# simplan
+Simple landing page
