@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fafafa;
+	color: #222222;
+	font-family: "Lato", sans-serif;
+	line-height: 1.5em;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #222222;
+	text-decoration: none;
+}
+.container {
+	width: 100%;
+	position: relative;
+	border-box: box-sizing;
+}
+.small-container {
+	width: 80%;
+	margin:0 auto;
+	border-box: box-sizing;
+}
+.home-layout {
+}
+	.home-layout-header {
+		color: #eaeaea;
+		background: #2D2D2D;
+		position: fixed;
+		display: block;
+		width: 100%;
+		z-index: 99999;
+	}
+		.home-layout-header-nav {
+			overflow: hidden;
+			padding: 10px 0;
+		}
+			.home-layout-header-nav-logo {
+				float: left;
+				padding: 20px;
+			}
+				.home-layout-header-nav-logo a {
+					color: #eaeaea;
+				}
+			.home-layout-header-nav-list {
+				float: right;
+			}
+				.home-layout-header-nav-list ul {
+					list-style: none;
+				}
+					.home-layout-header-nav-list ul li {
+						float: left;
+					}
+						.home-layout-header-nav-list ul li a {
+							color: #cacaca;
+							padding: 20px;
+							display: block;
+						}
+						.home-layout-header-nav-list ul li a:hover {
+							color:#eaeaea;
+						}
+	.home-layout-content {
+		color: #2d2d2d;
+		position: relative;
+	}
+		.home-layout-content-jumbotron {	
+			color: #eaeaea;
+			overflow: hidden;
+			background: #3D3D3D;
+			padding:160px 20px 40px 20px;
+		}
+			.home-layout-content-jumbotron-text {
+				width: 70%;
+				float: left;
+				height: 100%;
+				vertical-align: bottom;
+			}
+				.home-layout-content-jumbotron-text h2 {
+					font-size:3em;
+					line-height: 2em;
+				}
+				.home-layout-content-jumbotron-text p {
+					font-size:1.25em;
+					font-style: italic;
+				}
+			.home-layout-content-jumbotron-image {
+				width: 30%;
+				float: right;
+			}
+				.home-layout-content-jumbotron-image img {
+					width:350px;
+					position: absolute;
+					top: 0;
+					right: 0;
+					margin: 120px 10% 20px 20px;
+				}
+		.home-layout-content-about {
+			padding:100px 0;
+		}
+			.home-layout-content-about-title {
+				text-align: center;
+			}
+			.home-layout-content-about-text {
+				padding:40px 20px 0 20px;
+				text-align: center;
+				font-style: italic;
+			}
+		.home-layout-content-overview {
+			padding:100px 0;
+		}
+			.home-layout-content-overview-title {
+				text-align: center;
+			}
+			.home-layout-content-overview ul {
+				list-style: none;
+				overflow: hidden;
+				margin: 60px 0 0 0;
+			}
+				.home-layout-content-overview ul li {
+					width: 16%;
+					margin: 0 2.5%;
+					float:left;
+					text-align: center;
+					padding:2%;
+				}
+					.home-layout-content-overview ul li i.fa {
+						font-size: 3em;
+					}
+					.home-layout-content-overview ul li h3.overview-title {
+						margin: 20px;
+					}
+					.home-layout-content-overview ul li p.overview-desc {
+						font-style: italic;
+					}
+		.home-layout-content-contact {
+			background: #2d2d2d;
+			color:#efefef;
+			padding:40px 20px;
+		}
+			.home-layout-content-contact-title {
+				margin:40px 0 80px 0;
+				text-align: center;
+			}
+			.home-layout-content-contact-form {
+				margin-bottom: 20px;
+			}
+				.home-layout-content-contact-form form {
+					width: 400px;
+					margin: 0 auto;
+				}
+					.home-layout-content-contact-form form label {
+						text-align: left;
+					}
+					.home-layout-content-contact-form form input, .home-layout-content-contact-form form textarea {
+						width:360px;
+						padding:20px;
+						margin:20px 0;
+						border:3px solid #fff;
+					}
+					.home-layout-content-contact-form form input:focus, .home-layout-content-contact-form form textarea:focus {
+						outline:0;
+						border:3px solid #72C7CF;
+					}
+					.home-layout-content-contact-form form input[type="submit"] {
+						width: 406px;
+						font-weight: bold;
+						text-transform: uppercase;
+						cursor: pointer;
+						background: #72C7CF;
+						border:0;
+						color:#efefef;
+						border-bottom:5px solid rgba(0,0,0,.2);
+					}
+					.home-layout-content-contact-form form textarea {
+						height:200px;
+					}
+					.home-layout-content-contact-form form input[type="submit"]:hover {
+						margin-top: 23px;
+						border-bottom:3px solid rgba(0,0,0,.2);
+					}
+		.home-layout-content-customers {
+			padding:50px 0 40px 0;
+			text-align: center;
+		}
+			.home-layout-content-customers ul {
+			}
+				.home-layout-content-customers ul li {
+					display:inline-block;
+					margin:0 15px;
+				}
+					.home-layout-content-customers ul li img {
+						max-width:250px;
+						height: 40px;
+  						filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  						filter: gray; /* IE6-9 */
+ 						-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+					}
+					.home-layout-content-customers ul li img:hover {
+						filter:none;
+						-webkit-filter: grayscale(0%);
+					}
+	.home-layout-footer {
+		background:#43A5BF;
+		color:#efefef;
+	}
+		.home-layout-footer-top {
+			background:rgba(0,0,0,.1);
+			padding:60px 0;
+		}
+			.home-layout-footer-top ul {
+				overflow: hidden;
+			}
+				.home-layout-footer-top ul li {
+					float:left;
+					width:33.33333333%;
+					display:block;
+				}
+					.home-layout-footer-top ul li h4 {
+						margin:0 0 20px 0;
+					}
+					.home-layout-footer-top form {
+					}
+						.home-layout-footer-top form input[type="text"] {
+							margin:10px 0 0 0;
+						}
+						.home-layout-footer-top form input {
+							border:3px solid #fff;
+							width: 50%;
+							padding:10px 20px;
+							margin: 0;
+						}
+						.home-layout-footer-top form input[type="submit"] {
+							width:auto;
+							border:3px solid #26292c;
+							background:#26292c;
+							font-weight: bold;
+							text-transform: uppercase;
+							color:#efefef;
+							cursor: pointer;
+						}
+					.home-layout-footer-top ul li ul {
+					}
+						.home-layout-footer-top ul li ul li {
+							float:left;
+							width: auto;
+							padding:0 0 20px 0;
+							margin:0 10px 0 0;
+						}
+							.home-layout-footer-top ul li ul li a {
+								padding:10px 20px;
+								background:rgba(255,255,255,.1);
+								display:block;
+								color:rgba(255,255,255,.7);
+							}
+		.home-layout-footer-bottom {
+			padding:20px 0;
+			background:rgba(0,0,0,.2);
+		}
+			.home-layout-footer-bottom p.copyright {
+				text-align: left;
+			}
